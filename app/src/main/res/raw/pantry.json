@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "nazwa": "Skompresowane racje żywnościowe",
+    "ilosc": 150,
+    "jednostka": "szt",
+    "kategoria": "Żywność"
+  },
+  {
+    "id": 2,
+    "nazwa": "Wymienny wkład filtra CO2",
+    "ilosc": 12,
+    "jednostka": "szt",
+    "kategoria": "Systemy podtrzymywania życia"
+  },
+  {
+    "id": 3,
+    "nazwa": "Tlen medyczny",
+    "ilosc": 450.5,
+    "jednostka": "litry",
+    "kategoria": "Zasoby"
+  },
+  {
+    "id": 4,
+    "nazwa": "Zestaw naprawczy skafandra",
+    "ilosc": 5,
+    "jednostka": "kpl",
+    "kategoria": "Ekwipunek"
+  },
+  {
+    "id": 5,
+    "nazwa": "Bateria izotopowa RTG",
+    "ilosc": 3,
+    "jednostka": "szt",
+    "kategoria": "Energetyka"
+  },
+  {
+    "id": 6,
+    "nazwa": "Woda odzyskiwana (klasa A)",
+    "ilosc": 200,
+    "bitwa": "litry",
+    "kategoria": "Zasoby"
+  },
+  {
+    "id": 7,
+    "nazwa": "Rakieta sygnalizacyjna UV",
+    "ilosc": 10,
+    "jednostka": "szt",
+    "kategoria": "Bezpieczeństwo"
+  },
+  {
+    "id": 8,
+    "nazwa": "Licznik Geigera (model orbitalny)",
+    "ilosc": 2,
+    "jednostka": "szt",
+    "kategoria": "Narzędzia"
+  }
+]
