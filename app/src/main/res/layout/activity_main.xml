@@ -19,15 +19,6 @@
             android:padding="16dp"
             android:background="#1F2A44"/>
 
-        <Button
-            android:id="@+id/btnAddProduct"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Add New Supply"
-            android:layout_margin="12dp"
-            android:backgroundTint="#FF6F00"
-            android:textColor="#FFFFFF"
-            android:textStyle="bold"/>
 
         <ListView
             android:id="@+id/listView"
