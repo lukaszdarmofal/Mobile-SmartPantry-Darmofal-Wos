@@ -45,6 +45,18 @@ class PantryAdapter(
             }
         }
 
+        when {
+            product.ilosc < 3 -> {
+                txtQuantity.setTextColor(android.graphics.Color.RED)
+            }
+            product.ilosc in 3..5 -> {
+                txtQuantity.setTextColor(android.graphics.Color.YELLOW)
+            }
+            else -> {
+                txtQuantity.setTextColor(android.graphics.Color.WHITE)
+            }
+        }
+
         return view
     }
 }
