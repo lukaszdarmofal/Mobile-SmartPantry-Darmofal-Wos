@@ -6,7 +6,7 @@ import kotlinx.serialization.Serializable
 data class Product (
     val id: Int,
     val nazwa: String,
-    val ilosc: Int,
+    var ilosc: Int,
     val jednostka: String,
     val kategoria: String
 )

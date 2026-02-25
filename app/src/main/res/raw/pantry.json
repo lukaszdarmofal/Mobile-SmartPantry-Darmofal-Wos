@@ -16,7 +16,7 @@
   {
     "id": 3,
     "nazwa": "Tlen medyczny",
-    "ilosc": 450.5,
+    "ilosc": 450,
     "jednostka": "litry",
     "kategoria": "Zasoby"
   },
@@ -38,7 +38,7 @@
     "id": 6,
     "nazwa": "Woda odzyskiwana (klasa A)",
     "ilosc": 200,
-    "bitwa": "litry",
+    "jednostka": "litry",
     "kategoria": "Zasoby"
   },
   {
