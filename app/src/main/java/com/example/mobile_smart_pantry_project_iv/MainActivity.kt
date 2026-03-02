@@ -3,6 +3,7 @@ package com.example.mobile_smart_pantry_project_iv
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.SearchView
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.mobile_smart_pantry_project_iv.Model.Product
@@ -54,6 +55,42 @@ class MainActivity : AppCompatActivity() {
             binding.listView.adapter = adapter
         }
 
+        binding.searchName.setOnQueryTextListener(object : SearchView.OnQueryTextListener{
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                return false
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+
+                binding.filterNone.isChecked = true
+                val name: String = binding.searchName.query.toString()
+                val products = searchName(name)
+                val adapter = PantryAdapter(products)
+
+
+                binding.listView.adapter = adapter
+
+                return false
+            }
+
+        })
+    }
+
+    private fun searchName(name: String): MutableList<Product> {
+        val inputStream = resources.openRawResource(R.raw.pantry)
+        val reader = InputStreamReader(inputStream)
+        val jsonString = reader.readText()
+
+        val fullList = Json.decodeFromString<List<Product>>(jsonString).toMutableList()
+        val filteredList = mutableListOf<Product>()
+
+        fullList.forEach {
+            if(it.nazwa.lowercase().contains(name.lowercase())) {
+                filteredList.add(it)
+            }
+        }
+
+        return filteredList
     }
 
     private fun filterFood(): MutableList<Product> {
