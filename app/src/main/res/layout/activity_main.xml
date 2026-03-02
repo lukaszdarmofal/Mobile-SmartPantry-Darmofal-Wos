@@ -11,7 +11,7 @@
             android:id="@+id/txtTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Red Planet Pantry"
+            android:text="Kocham Matche i Yerba Mate"
             android:textColor="#FFFFFF"
             android:textSize="22sp"
             android:textStyle="bold"
@@ -19,6 +19,40 @@
             android:padding="16dp"
             android:background="#1F2A44"/>
 
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/filterFood"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tylko Żywność "/>
+
+                        <RadioButton
+                            android:id="@+id/filterOxygen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tylko Tlen " />
+
+                        <RadioButton
+                            android:id="@+id/filterNone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Wszystko "
+                            android:checked="true"/>
+
+                </RadioGroup>
+
+        </LinearLayout>
 
         <ListView
             android:id="@+id/listView"

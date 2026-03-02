@@ -11,14 +11,14 @@
     "nazwa": "Wymienny wkład filtra CO2",
     "ilosc": 12,
     "jednostka": "szt",
-    "kategoria": "Systemy podtrzymywania życia"
+    "kategoria": "Tlen"
   },
   {
     "id": 3,
     "nazwa": "Tlen medyczny",
     "ilosc": 450,
     "jednostka": "litry",
-    "kategoria": "Zasoby"
+    "kategoria": "Tlen"
   },
   {
     "id": 4,
@@ -39,7 +39,7 @@
     "nazwa": "Woda odzyskiwana (klasa A)",
     "ilosc": 200,
     "jednostka": "litry",
-    "kategoria": "Zasoby"
+    "kategoria": "Żywność"
   },
   {
     "id": 7,

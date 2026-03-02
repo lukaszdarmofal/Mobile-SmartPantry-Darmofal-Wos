@@ -33,7 +33,63 @@ class MainActivity : AppCompatActivity() {
 
         binding.listView.adapter = adapter
 
+        binding.filterFood.setOnClickListener {
+            val filteredProducts = filterFood()
+            val adapter = PantryAdapter(filteredProducts)
+
+            binding.listView.adapter = adapter
+        }
+
+        binding.filterOxygen.setOnClickListener {
+            val filteredProducts = filterOxygen()
+            val adapter = PantryAdapter(filteredProducts)
+
+            binding.listView.adapter = adapter
+        }
+
+        binding.filterNone.setOnClickListener {
+            val products = loadProducts()
+            val adapter = PantryAdapter(products)
+
+            binding.listView.adapter = adapter
+        }
+
     }
+
+    private fun filterFood(): MutableList<Product> {
+        val inputStream = resources.openRawResource(R.raw.pantry)
+        val reader = InputStreamReader(inputStream)
+        val jsonString = reader.readText()
+
+        val fullList = Json.decodeFromString<List<Product>>(jsonString).toMutableList()
+        val filteredList = mutableListOf<Product>()
+
+        fullList.forEach {
+            if(it.kategoria == "Żywność") {
+                filteredList.add(it)
+            }
+        }
+
+        return filteredList
+    }
+
+    private fun filterOxygen(): MutableList<Product> {
+        val inputStream = resources.openRawResource(R.raw.pantry)
+        val reader = InputStreamReader(inputStream)
+        val jsonString = reader.readText()
+
+        val fullList = Json.decodeFromString<List<Product>>(jsonString).toMutableList()
+        val filteredList = mutableListOf<Product>()
+
+        fullList.forEach {
+            if(it.kategoria == "Tlen") {
+                filteredList.add(it)
+            }
+        }
+
+        return filteredList
+    }
+
 
     private fun loadProducts(): MutableList<Product> {
 
