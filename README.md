@@ -52,9 +52,8 @@ Zastosujcie ViewBinding, aby kod był czysty i wolny od błędów.
 
 ## 🛰️ Procedury Operacyjne (Git Workflow)
 Pracujemy jak prawdziwy zespół inżynierów:
-- *Lead Engineer* (Osoba A) tworzy repozytorium z tego szablonu.
-- *Mission Specialist* (Osoba B) zostaje dodany jako Collaborator.
-- Pracujecie na gałęziach (ang. Branches). 
+- *Lead Engineer* Łukasz Darmofał
+- *Mission Specialist* Wiktor Woś
 
 ---
 
