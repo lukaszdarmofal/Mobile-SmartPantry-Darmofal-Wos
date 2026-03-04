@@ -29,26 +29,31 @@
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
 
                         <RadioButton
                             android:id="@+id/filterFood"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Tylko Żywność "/>
+                            android:text="Tylko Żywność"
+                            android:layout_margin="5dp"/>
 
                         <RadioButton
                             android:id="@+id/filterOxygen"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Tylko Tlen " />
+                            android:text="Tylko Tlen "
+                            android:layout_margin="5dp"/>
 
                         <RadioButton
                             android:id="@+id/filterNone"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Wszystko "
-                            android:checked="true"/>
+                            android:checked="true"
+                            android:layout_margin="5dp"/>
 
                 </RadioGroup>
 

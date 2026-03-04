@@ -8,5 +8,6 @@ data class Product (
     val nazwa: String,
     var ilosc: Int,
     val jednostka: String,
-    val kategoria: String
+    val kategoria: String,
+    val zdjecie: String
 )

@@ -4,55 +4,63 @@
     "nazwa": "Skompresowane racje żywnościowe",
     "ilosc": 150,
     "jednostka": "szt",
-    "kategoria": "Żywność"
+    "kategoria": "Żywność",
+    "zdjecie": "racje"
   },
   {
     "id": 2,
     "nazwa": "Wymienny wkład filtra CO2",
     "ilosc": 12,
     "jednostka": "szt",
-    "kategoria": "Tlen"
+    "kategoria": "Tlen",
+    "zdjecie": "co2"
   },
   {
     "id": 3,
     "nazwa": "Tlen medyczny",
     "ilosc": 450,
     "jednostka": "litry",
-    "kategoria": "Tlen"
+    "kategoria": "Tlen",
+    "zdjecie": "tlen"
   },
   {
     "id": 4,
     "nazwa": "Zestaw naprawczy skafandra",
     "ilosc": 5,
     "jednostka": "kpl",
-    "kategoria": "Ekwipunek"
+    "kategoria": "Ekwipunek",
+    "zdjecie": "zestaw"
   },
   {
     "id": 5,
     "nazwa": "Bateria izotopowa RTG",
     "ilosc": 3,
     "jednostka": "szt",
-    "kategoria": "Energetyka"
+    "kategoria": "Energetyka",
+    "zdjecie": "bateria"
   },
   {
     "id": 6,
     "nazwa": "Woda odzyskiwana (klasa A)",
     "ilosc": 200,
     "jednostka": "litry",
-    "kategoria": "Żywność"
+    "kategoria": "Żywność",
+    "zdjecie": "woda"
   },
   {
     "id": 7,
     "nazwa": "Rakieta sygnalizacyjna UV",
     "ilosc": 10,
     "jednostka": "szt",
-    "kategoria": "Bezpieczeństwo"
+    "kategoria": "Bezpieczeństwo",
+    "zdjecie": "rakieta"
   },
   {
     "id": 8,
     "nazwa": "Licznik Geigera (model orbitalny)",
     "ilosc": 2,
     "jednostka": "szt",
-    "kategoria": "Narzędzia"
+    "kategoria": "Narzędzia",
+    "zdjecie": "licznik"
   }
 ]

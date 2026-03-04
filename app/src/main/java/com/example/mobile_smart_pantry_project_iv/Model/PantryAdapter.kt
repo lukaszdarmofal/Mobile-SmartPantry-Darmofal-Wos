@@ -28,10 +28,19 @@ class PantryAdapter(
         val txtQuantity = view.findViewById<TextView>(R.id.txtQuantity)
         val btnIncrease = view.findViewById<Button>(R.id.btnIncrease)
         val btnDecrease = view.findViewById<Button>(R.id.btnDecrease)
+        val imgView = view.findViewById<ImageView>(R.id.imgProduct)
 
         txtName.text = product.nazwa
         txtCategory.text = product.kategoria
         txtQuantity.text = "Ilość: ${product.ilosc} ${product.jednostka}"
+
+        val imageResId = view.context.resources.getIdentifier(
+            product.zdjecie,
+            "drawable",
+            view.context.packageName
+        )
+
+        imgView.setImageResource(imageResId)
 
         btnIncrease.setOnClickListener {
             product.ilosc++
